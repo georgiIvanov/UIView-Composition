@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF8E11A61A68233800150B20 /* BouncyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8E11A31A68233800150B20 /* BouncyButton.m */; };
+		FF8E11AA1A6829C800150B20 /* ShinyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8E11A91A6829C800150B20 /* ShinyButton.m */; };
 		FF9EBC8B1A66DFD400D6C78F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9EBC8A1A66DFD400D6C78F /* main.m */; };
 		FF9EBC8E1A66DFD400D6C78F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9EBC8D1A66DFD400D6C78F /* AppDelegate.m */; };
 		FF9EBC941A66DFD400D6C78F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9EBC921A66DFD400D6C78F /* Main.storyboard */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF8E11A21A68233800150B20 /* BouncyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyButton.h; sourceTree = "<group>"; };
+		FF8E11A31A68233800150B20 /* BouncyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyButton.m; sourceTree = "<group>"; };
+		FF8E11A81A6829C800150B20 /* ShinyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinyButton.h; sourceTree = "<group>"; };
+		FF8E11A91A6829C800150B20 /* ShinyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinyButton.m; sourceTree = "<group>"; };
 		FF9EBC851A66DFD400D6C78F /* PracticalComposition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalComposition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9EBC891A66DFD400D6C78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF9EBC8A1A66DFD400D6C78F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF8E11A11A6822CF00150B20 /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FF8E11A81A6829C800150B20 /* ShinyButton.h */,
+				FF8E11A91A6829C800150B20 /* ShinyButton.m */,
+				FF8E11A21A68233800150B20 /* BouncyButton.h */,
+				FF8E11A31A68233800150B20 /* BouncyButton.m */,
+			);
+			path = UIClasses;
+			sourceTree = "<group>";
+		};
 		FF9EBC7C1A66DFD400D6C78F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +98,7 @@
 		FF9EBC871A66DFD400D6C78F /* PracticalComposition */ = {
 			isa = PBXGroup;
 			children = (
+				FF8E11A11A6822CF00150B20 /* UIClasses */,
 				FF9EBC8C1A66DFD400D6C78F /* AppDelegate.h */,
 				FF9EBC8D1A66DFD400D6C78F /* AppDelegate.m */,
 				FF9EBCB21A66E31700D6C78F /* Storyboards */,
@@ -235,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8E11AA1A6829C800150B20 /* ShinyButton.m in Sources */,
 				FF9EBCB11A66E30D00D6C78F /* ViewController.m in Sources */,
+				FF8E11A61A68233800150B20 /* BouncyButton.m in Sources */,
 				FF9EBC8E1A66DFD400D6C78F /* AppDelegate.m in Sources */,
 				FF9EBC8B1A66DFD400D6C78F /* main.m in Sources */,
 			);
@@ -430,6 +450,7 @@
 				FF9EBCAA1A66DFD400D6C78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF9EBCAB1A66DFD400D6C78F /* Build configuration list for PBXNativeTarget "PracticalCompositionTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +459,7 @@
 				FF9EBCAD1A66DFD400D6C78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
