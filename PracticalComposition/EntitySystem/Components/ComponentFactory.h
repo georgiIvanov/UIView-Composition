@@ -11,6 +11,7 @@
 
 @interface ComponentFactory : NSObject
 
-+(void)AddBouncyComponent:(UIButton*)button withTouchScale:(CGFloat)scale;
++(void)addBouncyComponent:(UIButton*)button withTouchScale:(CGFloat)scale;
++(void)addShinyComponent:(UIButton*)button withShineColor:(UIColor*)color;
 
 @end

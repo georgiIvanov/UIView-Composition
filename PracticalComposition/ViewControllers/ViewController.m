@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [ComponentFactory AddBouncyComponent:self.secondButton withTouchScale:1.5];
-    [ComponentFactory AddBouncyComponent:self.button withTouchScale:2.5];
+    [ComponentFactory addBouncyComponent:self.button withTouchScale:2.5];
+    [ComponentFactory addShinyComponent:self.secondButton withShineColor:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -11,10 +11,10 @@
 
 @interface ShinyButtonComponent : ViewComponent
 
-@property(nonatomic, readonly) CAGradientLayer* gradientLayer;
-@property(nonatomic, readonly) CALayer* touchLayer;
-@property(nonatomic, readonly) CABasicAnimation* gradientAnimation;
-@property(nonatomic, readonly) UIColor* shineColor;
-@property(nonatomic, readonly) NSString* text;
+@property(nonatomic) CAGradientLayer* gradientLayer;
+@property(nonatomic) CALayer* touchLayer;
+@property(nonatomic) CABasicAnimation* gradientAnimation;
+@property(nonatomic) UIColor* shineColor;
+@property(nonatomic) NSString* text;
 
 @end

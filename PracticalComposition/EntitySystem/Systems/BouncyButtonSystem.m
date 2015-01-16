@@ -8,7 +8,7 @@
 
 #import "BouncyButtonSystem.h"
 #import "BouncyButtonComponent.h"
-#import "UIView+Component.h"
+#import <UIKit/UIButton.h>
 
 @interface BouncyButtonSystem()
 
