@@ -8,6 +8,7 @@
 
 #import "EntityManager.h"
 #import "BouncyButtonSystem.h"
+#import "ShinyButtonSystem.h"
 
 @interface EntityManager()
 
@@ -37,17 +38,26 @@
     {
         self.componentsByClass = [@{} mutableCopy];
         self.systems = [@{} mutableCopy];
-        [self registerSystems];
+        NSArray* systems = [self createSystems];
+        [self registerSystems:systems];
     }
     return self;
 }
 
--(void)registerSystems
+-(NSArray*)createSystems
 {
-    NSString* systemName;
     BouncyButtonSystem* bouncyButtonSystem = [[BouncyButtonSystem alloc] initWithEntityManager:self];
-    systemName = [self extractSystemName:bouncyButtonSystem];
-    [self.systems setObject:bouncyButtonSystem forKey:systemName];
+    ShinyButtonSystem* shinyButtonSystem = [[ShinyButtonSystem alloc] initWithEntityManager:self];
+    
+    return @[bouncyButtonSystem, shinyButtonSystem];
+}
+
+-(void)registerSystems:(NSArray*)systems
+{
+    for (System* system in systems) {
+        NSString* systemName = [self extractSystemName:system];
+        [self.systems setObject:system forKey:systemName];
+    }
 }
 
 -(NSString*)extractSystemName:(System*)system

@@ -14,6 +14,7 @@
 
 @property(nonatomic, weak) EntityManager* entityManager;
 
+-(instancetype)init UNAVAILABLE_ATTRIBUTE;
 -(instancetype)initWithEntityManager:(EntityManager*)entityManager;
 - (void)setupEntity:(UIView*)entity forComponent:(ViewComponent*)component;
 

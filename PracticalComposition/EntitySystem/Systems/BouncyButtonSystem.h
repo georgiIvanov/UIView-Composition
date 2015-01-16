@@ -11,6 +11,4 @@
 
 @interface BouncyButtonSystem : System
 
--(instancetype)init UNAVAILABLE_ATTRIBUTE;
-
 @end
