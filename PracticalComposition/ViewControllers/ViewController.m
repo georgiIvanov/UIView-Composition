@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ComponentFactory.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [ComponentFactory AddBouncyComponent:self.secondButton withTouchScale:1.5];
+    [ComponentFactory AddBouncyComponent:self.button withTouchScale:2.5];
 }
 
 - (void)didReceiveMemoryWarning {
