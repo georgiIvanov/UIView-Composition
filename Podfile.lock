@@ -1,0 +1,10 @@
+PODS:
+  - BlockInjection (0.6.4)
+
+DEPENDENCIES:
+  - BlockInjection
+
+SPEC CHECKSUMS:
+  BlockInjection: 8431720d7cf9bb3e6bbafe2cfd4c809a58e3d211
+
+COCOAPODS: 0.35.0
