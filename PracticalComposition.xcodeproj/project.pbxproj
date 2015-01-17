@@ -10,6 +10,7 @@
 		EC82B9C6F5E899AB6A454F25 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDC6D6238886AB373D0B4E4 /* libPods.a */; };
 		FF00C6911A6945A900CAD3B6 /* ShinyButtonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF00C6901A6945A900CAD3B6 /* ShinyButtonComponent.m */; };
 		FF00C6941A69463000CAD3B6 /* ShinyButtonSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = FF00C6931A69463000CAD3B6 /* ShinyButtonSystem.m */; };
+		FF00C6971A697C3A00CAD3B6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF00C6961A697C3A00CAD3B6 /* SecondViewController.m */; };
 		FF8E11A61A68233800150B20 /* BouncyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8E11A31A68233800150B20 /* BouncyButton.m */; };
 		FF8E11AA1A6829C800150B20 /* ShinyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8E11A91A6829C800150B20 /* ShinyButton.m */; };
 		FF8E11AF1A6845B000150B20 /* ViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8E11AE1A6845B000150B20 /* ViewComponent.m */; };
@@ -46,6 +47,8 @@
 		FF00C6901A6945A900CAD3B6 /* ShinyButtonComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinyButtonComponent.m; sourceTree = "<group>"; };
 		FF00C6921A69463000CAD3B6 /* ShinyButtonSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinyButtonSystem.h; sourceTree = "<group>"; };
 		FF00C6931A69463000CAD3B6 /* ShinyButtonSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinyButtonSystem.m; sourceTree = "<group>"; };
+		FF00C6951A697C3A00CAD3B6 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FF00C6961A697C3A00CAD3B6 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FF8E11A21A68233800150B20 /* BouncyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyButton.h; sourceTree = "<group>"; };
 		FF8E11A31A68233800150B20 /* BouncyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyButton.m; sourceTree = "<group>"; };
 		FF8E11A81A6829C800150B20 /* ShinyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinyButton.h; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 			children = (
 				FF9EBCAF1A66E30D00D6C78F /* ViewController.h */,
 				FF9EBCB01A66E30D00D6C78F /* ViewController.m */,
+				FF00C6951A697C3A00CAD3B6 /* SecondViewController.h */,
+				FF00C6961A697C3A00CAD3B6 /* SecondViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF00C6971A697C3A00CAD3B6 /* SecondViewController.m in Sources */,
 				FF8E11C31A6917FD00150B20 /* BouncyButtonSystem.m in Sources */,
 				FF8E11D31A692C9100150B20 /* ComponentFactory.m in Sources */,
 				FF8E11AA1A6829C800150B20 /* ShinyButton.m in Sources */,

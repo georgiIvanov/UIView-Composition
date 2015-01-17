@@ -22,6 +22,11 @@
     [ComponentFactory addShinyComponent:self.secondButton withShineColor:[UIColor whiteColor]];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
