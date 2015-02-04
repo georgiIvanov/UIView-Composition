@@ -1,5 +1,4 @@
 platform :ios, "8.0"
 
-pod 'BlockInjection'
-
+pod "Aspects"
 

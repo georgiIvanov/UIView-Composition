@@ -6,9 +6,9 @@
 // project.
 
 
-// BlockInjection
-#define COCOAPODS_POD_AVAILABLE_BlockInjection
-#define COCOAPODS_VERSION_MAJOR_BlockInjection 0
-#define COCOAPODS_VERSION_MINOR_BlockInjection 6
-#define COCOAPODS_VERSION_PATCH_BlockInjection 4
+// Aspects
+#define COCOAPODS_POD_AVAILABLE_Aspects
+#define COCOAPODS_VERSION_MAJOR_Aspects 1
+#define COCOAPODS_VERSION_MINOR_Aspects 4
+#define COCOAPODS_VERSION_PATCH_Aspects 1
 
