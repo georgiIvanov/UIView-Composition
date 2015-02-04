@@ -49,6 +49,12 @@
     }
     
     NSAssert(error == nil, @"Method must be hooked without errors");
+    
+    [weakView aspect_hookSelector:@selector(removeFromSuperview) withOptions:AspectPositionBefore usingBlock:^{
+        [weakSystem removeFromEntitySystem:weakView];
+    }error:&error];
+    
+    NSAssert(error == nil, @"Method must be hooked without errors");
 }
 
 @end
