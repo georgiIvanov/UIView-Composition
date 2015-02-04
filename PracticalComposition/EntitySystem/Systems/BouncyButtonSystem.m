@@ -26,6 +26,8 @@
    forControlEvents:UIControlEventTouchUpInside];
     [button addTarget:self action:@selector(scaleToDefault:)
    forControlEvents:UIControlEventTouchDragExit | UIControlEventTouchCancel];
+    
+    [super setupEntity:entity forComponent:component];
 }
 
 - (void)scaleOnTouch:(id)sender

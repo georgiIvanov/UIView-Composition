@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "ViewComponent.h"
 #import "EntityManager.h"
+#import "Hooking.h"
 
-@interface System : NSObject
+@interface System : NSObject <Hooking>
 
 @property(nonatomic, weak) EntityManager* entityManager;
 

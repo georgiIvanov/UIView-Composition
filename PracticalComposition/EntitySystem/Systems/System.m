@@ -7,6 +7,13 @@
 //
 
 #import "System.h"
+#import "Hook.h"
+
+@interface System()
+
+@property(nonatomic, weak) Hook* hook;
+
+@end
 
 @implementation System
 
@@ -16,6 +23,7 @@
     if(self)
     {
         self.entityManager = entityManager;
+        self.hook = [Hook sharedHook];
     }
     
     return self;
@@ -23,6 +31,13 @@
 
 - (void)setupEntity:(UIView*)entity forComponent:(ViewComponent*)component
 {
-    
+//    NSLog(@"%@", entity);
+    [self.hook hookDeclaredMethodsFrom:self to:entity usingComponent:component];
 }
+
+-(void)removeFromEntitySystem:(UIView *)view
+{
+    [self.entityManager removeEntity:view];
+}
+
 @end

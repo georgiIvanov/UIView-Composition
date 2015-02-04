@@ -15,5 +15,6 @@
 +(instancetype)sharedEntityManager;
 -(void)addComponent:(ViewComponent*)component toEntity:(UIView*)entity;
 -(ViewComponent*)getComponentOfClass:(Class)class forEntity:(UIView*)entity;
+-(void)removeEntity:(UIView*)entity;
 
 @end

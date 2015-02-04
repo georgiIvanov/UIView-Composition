@@ -33,6 +33,16 @@
     [button setTitle:@"" forState:UIControlStateNormal];
     button.clipsToBounds = NO;
     
+    [super setupEntity:entity forComponent:component];
+}
+
+-(void)setupAfterLayoutSubviews:(UIButton*)button forComponent:(ShinyButtonComponent*)shinyComponent
+{
+    if(shinyComponent.gradientLayer != nil)
+    {
+        return;
+    }
+    
     shinyComponent.gradientLayer = [[CAGradientLayer alloc] init];
     
     [button addTarget:self action:@selector(tapDown:) forControlEvents:UIControlEventTouchDown | UIControlEventTouchDragEnter];

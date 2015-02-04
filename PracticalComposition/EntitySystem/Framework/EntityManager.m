@@ -13,7 +13,6 @@
 @interface EntityManager()
 
 @property(nonatomic) NSMutableDictionary* componentsByClass;
-@property(nonatomic) NSMutableArray* entities;
 @property(nonatomic) NSMutableDictionary* systems;
 
 @end
@@ -111,8 +110,6 @@
             [components removeObjectForKey:key];
         }
     }
-    
-    [_entities removeObject:key];
 }
 
 @end
