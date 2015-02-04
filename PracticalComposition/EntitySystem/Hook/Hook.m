@@ -11,39 +11,16 @@
 
 @implementation Hook
 
-+(instancetype)sharedHook
-{
-    static Hook *_sharedHooker = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _sharedHooker = [[Hook alloc] initSharedHook];
-    });
-    
-    return _sharedHooker;
-}
-
--(instancetype)initSharedHook
-{
-    self = [super init];
-    if(self)
-    {
-        
-    }
-    
-    return self;
-}
-
--(void)hookDeclaredMethodsFrom:(id<Hooking>)system to:(UIView*)view usingComponent:(ViewComponent*)component
++(void)hookDeclaredMethodsFrom:(id<Hooking>)system to:(UIView*)view usingComponent:(ViewComponent*)component
 {
     NSError* error;
-    id<AspectToken> token;
     __weak id<Hooking> weakSystem = system;
     __weak UIView* weakView = view;
     __weak ViewComponent* weakComponent = component;
     
     if([weakSystem respondsToSelector:@selector(setupAfterLayoutSubviews:forComponent:)])
     {
-        token = [weakView aspect_hookSelector:@selector(layoutSubviews) withOptions:AspectPositionAfter usingBlock:^{
+        [weakView aspect_hookSelector:@selector(layoutSubviews) withOptions:AspectPositionAfter usingBlock:^{
             [weakSystem setupAfterLayoutSubviews:weakView forComponent:weakComponent];
         }error:&error];
     }

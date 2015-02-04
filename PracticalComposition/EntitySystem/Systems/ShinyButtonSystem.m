@@ -16,15 +16,6 @@
 
 @implementation ShinyButtonSystem
 
--(instancetype)initWithEntityManager:(EntityManager*)entityManager
-{
-    self = [super initWithEntityManager:entityManager];
-    if(self)
-    {
-        
-    }
-    return self;
-}
 - (void)setupEntity:(UIView*)entity forComponent:(ViewComponent*)component
 {
     UIButton* button = (UIButton*)entity;

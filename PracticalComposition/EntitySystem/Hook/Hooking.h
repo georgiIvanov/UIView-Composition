@@ -10,7 +10,7 @@
 #import "System.h"
 #import "ViewComponent.h"
 
-// Systems implement this protocol to declare at which stage of
+// Systems implement methods of this protocol to declare at which stage of
 // the rendering process the component has to be initialized
 @protocol Hooking <NSObject>
 

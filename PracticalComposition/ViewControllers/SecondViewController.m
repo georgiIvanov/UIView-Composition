@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "ComponentFactory.h"
+
 @implementation SecondViewController
 
 - (void)viewDidLoad {

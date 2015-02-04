@@ -13,9 +13,6 @@
 
 @interface Hook : NSObject
 
--(instancetype)init UNAVAILABLE_ATTRIBUTE;
-+(instancetype)sharedHook;
-
--(void)hookDeclaredMethodsFrom:(id<Hooking>)system to:(UIView*)view usingComponent:(ViewComponent*)component;
++(void)hookDeclaredMethodsFrom:(id<Hooking>)system to:(UIView*)view usingComponent:(ViewComponent*)component;
 
 @end
